@@ -58,7 +58,14 @@ div.parent div.sedans img {
     width: 64px;
     height: 40px;
 }
-
+div.parent div.suvs  h2{
+       font-family: 'Big Shoulders Display', cursive;
+       font-size: 35px;
+       text-transform: uppercase;
+       margin-bottom: 0;
+       font-weight: 700;
+       margin-top: 10px;
+}
 div.parent div.sedans  p{
     line-height: 1.6;
     font-weight: 400;
