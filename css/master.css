@@ -1,0 +1,175 @@
+/* Start Global Rules */
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+body {
+
+}
+/* End Global Rules */
+
+
+
+/* Start Parent Div */
+div.parent {
+   
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+div.parent div {
+    padding: 50px 45px;
+    height: 480px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media (min-width: 300px) and (max-width: 899px) {
+    div.parent {
+        position: static;
+        left: 0;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); 
+        transform: translate(0 , 0);
+    }
+   
+}
+/* End Parent Div */
+
+
+/* Start Sedans Div */
+div.parent div.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius:  10px 0    0  10px ;
+}
+div.parent div.sedans img {
+    width: 64px;
+    height: 40px;
+}
+
+div.parent div.sedans  p{
+    line-height: 1.6;
+    font-weight: 400;
+    margin-top: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+   
+    font-size: 15px;
+}
+div.parent div.sedans  button{
+    width: 140px;
+    height: 45px; 
+   border-radius: 25px;
+   border:none;
+   background-color: (0, 0%, 95%);
+   color: hsl(31, 77%, 52%);
+   font-size: 15px;
+   cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 899px) {
+ 
+    div.parent div.sedans {
+        border-radius:  10px 10px 0 0   ;
+    }
+}
+/* End Sedans Div */
+
+
+
+/* Start suvs Div */
+div.parent div.suvs {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+
+}
+
+div.parent div.suvs img {
+    width: 64px;
+    height: 40px;
+}
+div.parent div.suvs  h2{
+       font-family: 'Big Shoulders Display', cursive;
+       font-size: 35px;
+       text-transform: uppercase;
+       margin-bottom: 0;
+       font-weight: 700;
+       margin-top: 10px;
+}
+div.parent div.suvs  p{
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+}
+div.parent div.suvs  button{
+    width: 140px;
+    height: 45px; 
+   border-radius: 25px;
+   border:none;
+   background-color: (0, 0%, 95%);
+   color: hsl(184, 100%, 22%);
+   font-size: 15px;
+   cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 899px) {
+    div.parent div.suvs {
+        border-radius:  0  ;
+    }
+}
+/* End suvs Div */
+
+
+/* Start Luxury Div */
+div.parent div.luxary {
+    background-color: hsl(179, 100%, 13%);
+    border-radius:  0 10px 10px  0  ;
+
+}
+div.parent div.luxary img {
+    width: 64px;
+    height: 40px;
+}
+div.parent div.luxary  h2{
+       font-family: 'Big Shoulders Display', cursive;
+       font-size: 35px;
+       text-transform: uppercase;
+       margin-bottom: 0;
+       font-weight: 700;
+       margin-top: 10px;
+}
+div.parent div.luxary  p{
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+div.parent div.luxary  button{
+    width: 140px;
+    height: 45px; 
+   border-radius: 25px;
+   border:none;
+   background-color: (0, 0%, 95%);
+   color: hsl(179, 100%, 13%);
+   font-size: 15px;
+   cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 899px) {
+    div.parent div.luxary {
+        border-radius: 0 0 10px 10px  ;
+    }
+}
+/* End Luxury Div */
